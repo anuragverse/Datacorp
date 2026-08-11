@@ -1,0 +1,12 @@
+streamlit
+Pillow
+pandas
+numpy
+seaborn
+openpyxl
+plotly
+scikit-learn
+fpdf2
+thefuzz
+statsmodels
+python-Levenshtein
