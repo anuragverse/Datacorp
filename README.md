@@ -4,29 +4,18 @@ Datacorp is an interactive data cleaning and analytics application built with **
 
 ---
 
-## Features
+## How it works
 
-* Upload **CSV, Excel, and JSON** datasets
-* Automated data-quality analysis
-* Missing-value detection and handling
-* Duplicate detection and removal
-* Data-type conversion
-* Outlier detection and handling
-* Fuzzy duplicate matching
-* Data cleaning and transformation tools
-* Interactive data visualizations
-* Statistical analysis
-* Correlation analysis
-* Time-series analysis
-* Pivot-table generation
-* Geographic data visualization
-* AI-powered prediction and anomaly detection
-* Data-quality scoring
-* Automatic data cleaning
-* Undo and redo cleaning operations
-* Export cleaned datasets
-* Generate TXT and PDF reports
-* Session-based processing without permanent data storage
+The sidebar holds your files, the sample-data switch and **Undo / Redo / Reset**. The four pages follow the natural workflow:
+
+| Page | What you can do |
+| ---- | --------------- |
+| **Overview** | Quality score, detected issues, one-click **Auto-fix**, insights, data preview |
+| **Clean** | Missing values, exact and fuzzy duplicates, rename/drop columns, text cleaning, find & replace, data-type conversion, outliers, merging files |
+| **Analyze** | Distribution, scatter, categories, correlation, trend + seasonality, pivot table, world map, prediction (random forest), anomaly detection |
+| **Export** | Cleaned data as CSV or Excel, TXT and PDF reports, before/after summary, cleaning history |
+
+Every change is a step in the history, so it can be undone and redone. Sessions are processed in memory only and nothing is stored.
 
 ---
 
@@ -40,8 +29,7 @@ Datacorp is an interactive data cleaning and analytics application built with **
 | NumPy        | Numerical computing                      |
 | Scikit-learn | Machine learning and predictive analysis |
 | Plotly       | Interactive visualizations               |
-| Matplotlib   | Data visualization                       |
-| Seaborn      | Statistical visualization                |
+| Statsmodels  | Time-series decomposition                |
 | FPDF         | PDF report generation                    |
 | RapidFuzz    | Fuzzy duplicate matching                 |
 
@@ -154,27 +142,12 @@ http://localhost:8501
 Open the URL in your browser to access Datacorp.
 
 
-# AI-Powered Analysis
-
-Datacorp includes machine-learning-based capabilities for advanced data analysis.
-
-These capabilities can be used for:
-
-* Prediction
-* Anomaly detection
-* Pattern identification
-* Advanced data analysis
-
-The available AI-powered functionality may vary depending on the structure, size, and characteristics of the uploaded dataset.
-
----
-
 # Supported File Formats
 
 | File Type | Extensions      | Support |
 | --------- | --------------- | ------- |
 | CSV       | `.csv`          | Yes     |
-| Excel     | `.xlsx`, `.xls` | Yes     |
+| Excel     | `.xlsx`         | Yes     |
 | JSON      | `.json`         | Yes     |
 
 ---
@@ -188,36 +161,3 @@ The application is designed for **session-based processing without permanent dat
 Users should avoid uploading confidential, sensitive, or personally identifiable information unless they understand and accept the environment in which the application is running.
 
 ---
-
-
-
-# Future Improvements
-
-Potential future enhancements include:
-
-* Automated data-cleaning recommendations
-* Natural-language data querying
-* Automated exploratory data analysis
-* Advanced feature engineering
-* Additional machine-learning models
-* Database connectivity
-* Cloud storage integration
-* Scheduled data-quality monitoring
-* Additional export formats
-* Role-based access control
-* Advanced dashboard customization
-
----
-
-# Author
-
-**Anurag**
-
-* GitHub: [@anuragverse](https://github.com/anuragverse)
-
----
-
-# License
-
-This project is intended for **educational, development, and demonstration purposes**.
-
